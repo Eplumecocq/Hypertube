@@ -1,0 +1,58 @@
+
+// Colors
+$orange-red: #f85658;
+$background-grey: #222222;
+$medium-grey: #5E5E5E;
+$light-grey: #929191;
+
+$google-color: #FFC107;
+$facebook-color: #517bd2;
+$facebook-lightcolor: #517bd2;
+$intra-color: #21CE8B;
+
+// Fonts
+$font-fira: 'Fira Sans', sans-serif;
+$font-oswald: 'Oswald', sans-serif;
+$font-bungee: 'Bungee', cursive;
+
+// Sizes
+$form-input-size: 100%;
+$break-large: 1200px;
+
+// Overwritting Bulma variables
+$primary: $orange-red;
+$grey-darker: $background-grey;
+
+//Classes
+.has-grey-background {
+  background-color: $background-grey !important;
+}
+.is-danger {
+  color: #FF3860 !important;
+}
+.is-global-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  display: inline-block;
+}
+.title {
+  color: white;
+}
+::-webkit-scrollbar {
+	width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background:$medium-grey;
+  border-radius: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bungee|Fira+Sans:300,400,700|Oswald:300,400,700');
+@import '../../node_modules/bulma/bulma.sass'
