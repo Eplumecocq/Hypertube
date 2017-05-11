@@ -1,0 +1,23 @@
+{
+  "name": "hypertube",
+  "version": "1.0.0",
+  "description": "Streaming torrent website",
+  "scripts": {
+    "dev": "export NODE_ENV=dev && concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "prod": "export NODE_ENV=prod && npm run build && npm run server",
+    "client": "npm run dev --prefix client",
+    "server": "npm run start --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylandjian/HyperTube.git"
+  },
+  "keywords": [],
+  "author": "eplumeco, ddjian, pdelefos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylandjian/HyperTube/issues"
+  },
+  "homepage": "https://github.com/dylandjian/HyperTube#readme"
+}
